@@ -1,15 +1,18 @@
 /* Basic Reset*/
 *{
-    marigin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-Body {
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(4, 41, 56);
     color: white;
     line-height: 1.6;
+     text-align: center;
+    
+    
 }
 
 /* Header */
@@ -21,12 +24,28 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* or space-between for full width */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 80px; 
+}
+h1 {
+    font-size: 5rem; 
+    margin-bottom: 20px;
 }
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
     transition: background-color 0.3s ease;
+    font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -42,7 +61,7 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: 2 rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -61,8 +80,21 @@ nav a:hover {
     flex: 1 1 250px;
     border-radius: 8px;
     transition: transform 0.3s ease;
+   
 
 }
+.product img {
+    width: 300px;      
+    height: 300px;     
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 15px auto; /* Center and add space below */
+    border-radius: 8px;       /* Optional: rounded corners */
+}
+.product h3 {
+    font-size: 1.5rem; 
+}
+
 
 .product:hover {
     transform: translateY(-5px);
@@ -71,7 +103,7 @@ nav a:hover {
 }
 
 /* CTA Update Form */
-.cta-form {
+.cta-update {
     text-align: center;
     padding: 30px 10px;
 }
